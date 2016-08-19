@@ -1,0 +1,61 @@
+type() #Similar to the class function on R
+
+#Converting variable types:
+str() #To string
+int() #To integer
+float() # To float
+bool()
+
+#Creating Lists:
+list = [] #this is an empty list
+del(fam[0]) #delets first element in fam list
+
+max(); round(); help()
+len() #length of the vector
+
+#Methods: Functions that belong to python objects (strings, floats, dictionaries, pandas etc)
+#String:
+capitalize(); replace()
+
+#Float:
+bit_length(); conjugate()
+
+#lists:
+index(); count()
+
+#Packages: 
+# 1.Numpy (arrays)
+np.array(listname) #converts lists to arrays
+np.mean #mean of the numeric array
+np.median #median of the numeric array
+np.corrcoef #correlation
+np.std #standard deviation
+np.random.normal(distribution mean, distribution std, no of samples) #create a random array of numbers
+for x in np.nditer(my_array): print(x) #Gives all values in array
+
+# 1.A Boolean operators
+np.logical_and() #and operator
+np.logical_or() #or operator
+
+
+# 2. Matplotlib (visualization)
+plt.plot() #plot function
+plt.show() #show the plot
+plt.scatter() #scatterplot function
+plt.clf() #clear all plots inside the python environment
+
+plt.xlabel(); plt.ylabel(); plt.title()
+plt.yticks([intervals list],[labelnames list]) #List of intervals and labels to be displayed on y-axis
+plt.text() #add text to corresponding the points on the plot
+plt.grid(True) #show grid
+
+#Dictionaries: Used to make pair-wise connections between two variables
+print(dictname.keys()) #display all the keys in the dictionary
+for key,value in dictname.items(): print(key+ str(value)) #Print all keys and values in the dictionary
+
+#Pandas: High-level manipulation tool built over numpy. Contains dataframes
+pd.read_csv("path/to/file.csv",index_col = 0) #Importing csv files, specify first row is the index
+dataframe[["column_name1","col2name"]] #select data from a specific columns
+df.loc[["index1","index2"],["colname1","colname2"]]
+df.iloc[:,[1,2]] #select all rows and col1 and col2
+for label, row in df.iterrows(): 
